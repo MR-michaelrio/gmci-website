@@ -98,26 +98,14 @@
                         <li><a href="{{ route('tentang') }}" class="hover:text-white transition-colors">Tentang Kami</a></li>
                         <li><a href="{{ route('tim') }}" class="hover:text-white transition-colors">GMCI Team</a></li>
                         <li><a href="{{ route('sibulan') }}" class="hover:text-white transition-colors">Program SiBulan</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h5 class="text-white font-bold mb-6">Aksi</h5>
-                    <ul class="space-y-4 text-sm">
                         <li><a href="{{ route('donasi') }}" class="hover:text-indigo-400 font-medium transition-colors">Donasi Sekarang</a></li>
                         <li><a href="{{ route('kontak') }}" class="hover:text-white transition-colors">Hubungi Kami</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Menjadi Relawan</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Karir</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="flex flex-col md:flex-row justify-between items-center text-sm gap-4">
                 <p>&copy; 2026 GMCI Organization. All rights reserved.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
-                    <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
-                </div>
             </div>
         </div>
     </footer>
