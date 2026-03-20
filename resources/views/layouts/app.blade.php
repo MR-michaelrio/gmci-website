@@ -61,10 +61,11 @@
                     <a href="{{ route('kontak') }}"
                         class="text-slate-600 hover:text-indigo-600 font-medium transition-colors {{ request()->routeIs('kontak') ? 'text-indigo-600' : '' }}">Kontak</a>
                     <a href="{{ route('donasi') }}"
-                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Donasi
+                        class="text-slate-600 hover:text-indigo-600 font-medium transition-colors {{ request()->routeIs('donasi') ? 'text-indigo-600' : '' }}">Donasi
                         Sekarang</a>
                     <a href="https://dispatch.gmci.or.id/request" target="_blank"
-                        class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Form Permintaan</a>
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Form
+                        Permintaan</a>
                 </div>
 
                 <!-- Mobile menu button -->
