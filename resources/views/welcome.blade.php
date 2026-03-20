@@ -194,98 +194,23 @@
                 </p>
             </div>
 
-            <!-- Masonry Grid -->
-            <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-                <!-- Image 1 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 1.jpg') }}" alt="Kegiatan GMCI 1" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
+            <!-- Masonry Grid – loaded from public/galeri -->
+            @if(isset($galleryImages) && count($galleryImages) > 0)
+                <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                    @foreach($galleryImages as $image)
+                        <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                            <img src="{{ asset('galeri/' . basename($image)) }}" alt="Kegiatan GMCI" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
-
-                <!-- Image 2 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 2.jpg') }}" alt="Kegiatan GMCI 2" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image 3 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 3.jpg') }}" alt="Kegiatan GMCI 3" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image 4 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 4.jpg') }}" alt="Kegiatan GMCI 4" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image 5 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 5.jpg') }}" alt="Kegiatan GMCI 5" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image 6 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 6.jpg') }}" alt="Kegiatan GMCI 6" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Image 7 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 7.jpg') }}" alt="Kegiatan GMCI 7" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Image 8 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 8.jpg') }}" alt="Kegiatan GMCI 8" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Image 9 -->
-                <div class="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-                    <img src="{{ asset('galeri/galeri 9.jpg') }}" alt="Kegiatan GMCI 9" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <h4 class="font-bold text-lg">Dokumentasi Kegiatan</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @else
+                <p class="text-center text-slate-400">Belum ada foto di folder galeri.</p>
+            @endif
             
             <div class="text-center mt-12">
                 <a href="https://www.instagram.com/gmc.in/" target="_blank" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 text-slate-700 font-semibold px-8 py-4 rounded-full transition-all shadow-sm">

@@ -15,7 +15,10 @@
                     <i data-lucide="phone-call" class="w-8 h-8"></i>
                 </div>
                 <h4 class="font-bold text-slate-900 mb-3 text-xl">CALL CENTER GMCI</h4>
-                <a href="https://wa.me/6281386858680" target="_blank" class="text-indigo-600 font-bold text-2xl hover:text-indigo-800 transition-colors">0813 8685 8680</a>
+                <div class="flex flex-col space-y-2">
+                    <a href="https://wa.me/6281386858680" target="_blank" class="text-indigo-600 font-bold text-xl hover:text-indigo-800 transition-colors">0813 8685 8680</a>
+                    <a href="https://wa.me/6281150112112" target="_blank" class="text-indigo-600 font-bold text-xl hover:text-indigo-800 transition-colors">0811 5011 2112</a>
+                </div>
             </div>
 
             <!-- Instagram -->

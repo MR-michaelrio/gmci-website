@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $galleryImages = collect(range(1, 9))->map(fn($i) => "galeri $i.jpg")->all();
+    return view('welcome', compact('galleryImages'));
 })->name('home');
 
 Route::get('/tentang', function () {

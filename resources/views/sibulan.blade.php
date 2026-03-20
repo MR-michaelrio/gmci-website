@@ -56,7 +56,7 @@
                     <i data-lucide="ambulance" class="w-12 h-12"></i>
                 </div>
                 <div>
-                    <h4 class="text-6xl font-black text-white mb-2 tracking-tighter">140<span class="text-indigo-400">+</span></h4>
+                    <h4 class="text-6xl font-black text-white mb-2 tracking-tighter">400<span class="text-indigo-400">+</span></h4>
                     <p class="text-slate-300 text-lg font-medium">Ambulans Terdaftar di berbagai daerah</p>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     <i data-lucide="building-2" class="w-12 h-12"></i>
                 </div>
                 <div>
-                    <h4 class="text-6xl font-black text-white mb-2 tracking-tighter">200<span class="text-blue-400">+</span></h4>
+                    <h4 class="text-6xl font-black text-white mb-2 tracking-tighter">500<span class="text-blue-400">+</span></h4>
                     <p class="text-slate-300 text-lg font-medium">Lembaga Kesehatan & Pendampingan</p>
                 </div>
             </div>
